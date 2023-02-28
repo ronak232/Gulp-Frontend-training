@@ -1,0 +1,23 @@
+.banner-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    clip-path: ellipse(98% 89% at 50% 10%);
+    min-height: 330px;
+    width: 100%;
+
+    @include min-screen(sm) {
+        min-height: 541px;
+        clip-path: ellipse(85% 75% at 50% 10%);
+    }
+
+    @include min-screen(lg) {
+        clip-path: ellipse(65% 88% at 50% 10%);        
+    }
+    &__large{
+        min-height: 686px;
+        @include min-screen(sm){
+            min-height: 713px;
+        }
+    }
+}

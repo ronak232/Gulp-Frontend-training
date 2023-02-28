@@ -1,0 +1,104 @@
+.contact-us {
+    &__container {
+        @extend .large-container;
+    }
+
+    &-form {
+        @extend .small-container;
+
+        &__field-contain {
+            margin-top: 28px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+
+            @include min-screen(md) {
+                padding-left: 25px;
+                padding-right: 25px;
+                width: 50%;
+            }
+
+            &.form-addition-information {
+                width: 100%;
+            }
+            &.error-field{
+                .plastic-contact-us-form__error-field{
+                    display: block;
+                }
+                .plastic-contact-us-form__input-control{
+                    border: 1px solid $dark-red;
+                }
+            }
+        }
+
+        &__field-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            @include min-screen(md) {
+                flex-direction: row;
+                margin-left: -25px;
+                margin-right: -25px;
+            }
+        }
+
+        &__input-label {
+            color: $cerrlean-frost;
+            display: block;
+            font-size: 20px;
+            font-weight: $font-bold;
+            line-height: 24px;
+            margin-bottom: 9px;
+        }
+
+        &__input-control {
+            background-color: $white;
+            border: 1px solid $grey44;
+            box-shadow: inset 1px 1px 2px #00000033;
+            color: $grey44;
+            font-size: 22px;
+            line-height: 26px;            
+            padding: 15px 11px 9px;
+            width: 100%;
+            &.contact-us-form-number{
+                appearance: none;
+                -moz-appearance: textfield;
+                &::-webkit-outer-spin-button,&::-webkit-inner-spin-button{
+                    margin: 0;
+                    -webkit-appearance: none;
+                }
+            }
+           
+        }
+
+        &__error-field {
+            color: $dark-red;
+            display: none;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 0.93px;
+            line-height: 1.23;
+            margin-top: 4px;
+        }
+
+        &__button {
+            @extend .submit-button;
+            width: 100%;
+        }
+
+        &__button-contain {
+            max-width: 438px;
+            margin: 40px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+
+            @include min-screen(md) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+}

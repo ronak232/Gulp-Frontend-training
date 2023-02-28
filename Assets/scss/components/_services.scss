@@ -1,0 +1,81 @@
+.services {
+    &__container {
+        @extend .small-container;
+    }
+
+    &__accordian {
+        margin: 40px 0;
+
+        &-item {
+            border: 3px solid $light-blue;
+            margin-bottom: 10px;
+        }
+
+        &-trigger {
+            background-color: $white;
+            border: none;
+            box-shadow: none;
+            color: $light-blue;
+            cursor: pointer;
+            font-family: $arimo;
+            font-size: 24px;
+            font-weight: $font-normal;
+            line-height: 32px;
+            padding: 27px 35px 25px 24px;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+            transition: background-color 0.5s,padding 0.5s;
+            width: 100%;
+            
+            &[aria-expanded="true"] {
+                background-color: $white-smoke;
+                padding: 27px 35px 25px 21px;
+
+                .services__accordian-icon {
+                    transform: rotate(180deg);
+                }
+            }
+            &:hover{
+                background-color: $white-smoke;
+            }
+        }
+
+        &-icon {
+            color: $light-blue;
+            font-size: 30px;
+            position: absolute;
+            right: 20px;
+            top: 35%;
+            transition: transform 0.5s;
+        }
+
+        &-copy {
+            color: $black;            
+            max-height: 0;
+            overflow: hidden;            
+            visibility: hidden;
+            transition: visibility 0.5s, padding 0.5s, max-height 0.5s;
+
+            &-text {
+                color: $black;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            &-link {
+                color: $cerulean-frost;
+                display: block;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: right;
+            }
+
+            &--open {               
+                max-height: initial;
+                padding: 27px 27px 25px 21px;
+                visibility: visible;
+            }
+        }
+    }
+}

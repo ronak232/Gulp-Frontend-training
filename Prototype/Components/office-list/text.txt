@@ -1,0 +1,41 @@
+      let crossBtn = document.querySelector(
+              ".offices-location__dropdown_container_cross"
+            );
+            crossBtn.classList.add("show-btn");
+            crossBtn.addEventListener("click", () => {
+              const showAllelements = document
+                .querySelectorAll(".c-location-listing__region")
+                .forEach((elements) => {
+                  if (
+                    elements.classList.contains(
+                      "c-location-listing__region-active"
+                    )
+                  ) {
+                    return true;
+                  } else {
+                    document
+                      .querySelectorAll(".c-location-listing__region")
+                      .forEach((active) => {
+                        active.classList.add(
+                          "c-location-listing__region-active"
+                        );
+                      });
+                  }
+                });
+            });
+
+
+  // const error = document.getElementById("error");
+// inputValue.classList.remove("success");
+        // document
+        //   .querySelector(".fa-check-circle")
+        //   .classList.remove("success-circle");
+        // let errorMssg = "Zip code is required";
+        // error.innerText = errorMssg;
+
+// inputValue.classList.add("success");
+        // document
+        //   .querySelector(".fa-check-circle")
+        //   .classList.add("success-circle");
+        // error.innerText = "";
+        // return true;

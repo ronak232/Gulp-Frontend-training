@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.clinical_services {
+  width: 100%;
+  clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0 100%, 0% 50%);
+  position: relative;
+  margin-bottom: 70px;
+  &_bg--pink {
+    background: #fcf8fe;
+  }
+
+  &_bg-image-1 {
+    background: url(../../images/jungle_theme_orange.png);
+    background-size: cover;
+  }
+  &_bg--light-green {
+    background: #f6fbf4;
+  }
+
+  &_bg--dark-red {
+    background: #f05b14;
+  }
+
+  &_bg-dark-blue {
+    background: $color-blue;
+  }
+  &_bg--image-blue {
+    background: url(../../images/underwater_theme_blue.png);
+    background-size: cover;
+  }
+  &_bg-black {
+    background: $black;
+  }
+  &__container {
+    max-width: 980px;
+    padding: 10px 53px 65px 55px;
+  }
+
+  &__clip_content {
+    padding: 15px 28px;
+  }
+  &__excellent_care {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    color: $color-blue;
+    padding-bottom: 35px;
+  }
+
+  &__nicu_desc {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black;
+  }
+  &__pediatrics_doctor_title {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: $color-blue;
+  }
+  &__pediatrics_dropdown{
+    margin-bottom: 25px;
+  }
+  &__pediatrics_form {
+    width: 25%;
+    position: absolute;
+    right: 8%;
+    top: 21%;
+    padding: 25px 30px;
+    background: $white;
+    z-index: 99;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // width: 20%;
+
+    &_zip_code {
+      position: relative;
+    }
+    &_container {
+      margin-top: 20px;
+      margin-bottom: 9px;
+      padding: 0 22px;
+    }
+
+    &_options {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #646464;
+    }
+    &_select {
+      background: $white;
+      border: 1px solid $grey;
+      width: 100%;
+      padding: 12px 20px 12px 4px;
+    }
+
+    &_content {
+      padding-top: 35px;
+    }
+    &_input {
+      padding: 11px;
+      width: 100%;
+      // &_success{
+      //   position: absolute;
+      //   right: 9px;
+      //   top: 19px;
+      //   color: green;
+      //   visibility: hidden;
+      // }
+    }
+    &_contact {
+      text-align: center;
+      padding-top: 5px;
+
+      &_number {
+        color: $color-blue;
+        margin-left: 5px;
+      }
+    }
+    // &_error {
+    //   display: block;
+    //   max-width: 280px;
+    //   color: $color-red;
+    // }
+  }
+  &__pediatrics_modal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    // background-color:rgba(150 149 149 / 38%);
+    opacity: 0;
+    /* pointer-events: all; */
+    transition: all 0.7s ease-out;
+  }
+}
+// .success {
+//   border: 2px solid rgb(74, 231, 74);
+// }
+.error {
+  width: 40%;
+  display: none;
+  color: $color-red;
+}
+.fa-check-circle {
+  position: absolute;
+  right: 9px;
+  top: 19px;
+  color: green;
+  visibility: hidden;
+}
+.fa-check-circle.success-circle {
+  visibility: visible;
+}
+
+.fa-exclamation-circle {
+  position: absolute;
+  right: 9px;
+  top: 19px;
+  color: $color-red;
+  visibility: hidden;
+}
+.fa-exclamation-circle.error-circle {
+  visibility: visible;
+}
+
+.fg--white {
+  color: $white;
+}
+.btn {
+  &--pediatric {
+    margin-left: 0;
+    padding: 9px 44px;
+  }
+  &--pediatric:hover {
+    background-color: $color-blue;
+    color: $white;
+  }
+}
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.error-contain{
+.error{
+  display: block;
+}
+}
+// .clinical_services_second {
+//   width: 100%;
+//   background: rgba(240, 91, 20, 0.1);
+//   clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0 100%, 0% 50%);
+//   position: relative;
+// }
+// Dyanmic tab
+
+.main_tab {
+  width: 100%;
+  padding: 40px;
+
+  &__container {
+    position: relative;
+    max-width: 1320px;
+    margin: auto;
+    height: 100vh;
+
+    &_tab {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      padding-right: 30px;
+      position: sticky;
+      //   or
+      // position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 40px;
+    }
+    &_items-button {
+      margin-bottom: 20px;
+      padding: 20px 10px 20px 47px;
+      background: transparent;
+      border: 0;
+      border-right: 7px $grey solid;
+      color: $primary-color;
+      font-size: 30px;
+      cursor: pointer;
+      font-family: $openSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.04em;
+    }
+
+    .active {
+      color: $dark-orange;
+      border-right: 7px $dark-orange solid;
+    }
+  }
+
+  &__content {
+    // width: 80%;
+    // padding-left: 20px;
+    width: 80%;
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    &_info {
+      margin-bottom: 30px;
+      display: block;
+
+      &--active {
+        display: block;
+      }
+    }
+
+    &_title {
+      font-family: $openSans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: 0.02em;
+      color: $color-blue;
+    }
+
+    &_intro-desc {
+      font-family: $openSans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $black;
+      padding-bottom: 20px;
+    }
+  }
+  #content5 {
+    height: 100vh;
+  }
+}

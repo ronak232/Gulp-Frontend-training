@@ -1,0 +1,102 @@
+.appointment-nicu {
+  width: 100%;
+  position: relative;
+
+  &__container {
+    min-height: 360px;
+    margin: auto;
+    padding-top: 47px;
+    background: #f5f5f5;
+    clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0 100%, 0% 50%);
+
+    &_people {
+      max-width: 1320px;
+      margin: auto;
+      &-name {
+        font-family: $openSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: 0.02em;
+        color: $color-blue;
+        padding-bottom: 10px;
+      }
+      &-specialties {
+        font-family: $openSans;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: $black;
+        margin-bottom: 35px;
+
+        &-bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__person-img {
+    position: absolute;
+    top: 38%;
+    right: 10%;
+  }
+
+  &__profile {
+    padding-top: 50px;
+
+    &_person-bio {
+      max-width: 1320px;
+      margin: auto;
+    }
+    &_person-about {
+      font-family: $openSans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: 0.02em;
+      color: $color-blue;
+      padding-bottom: 25px;
+
+      &-desc {
+        font-family: $openSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+        max-width: 820px;
+        padding-bottom: 15px;
+
+        &-fd {
+          font-family: $openSans;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: $black;
+          padding-bottom: 28px;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  margin-left: 0;
+ 
+  &.btn-white {
+    margin-top: 0;
+    border-radius: 5px;
+    color: $black;
+    padding: 13px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid $color-blue;
+    border-radius: 150px;
+    font-weight: 600;
+    width: 23%;
+    
+  }
+}

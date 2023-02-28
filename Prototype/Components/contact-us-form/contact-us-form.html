@@ -1,0 +1,67 @@
+<div class="contact-us">
+    <div class="contact-us__container">
+        <!-- Rich text component  -->
+        <div class="rich-text">
+            <h1 class="contact-us__title">Contact Us</h1>
+            <p class="contact-us__description">Please provide any information that would be relevant to your
+                interest and times available for us to contact you.</p>
+        </div>
+        <!-- Html for form -->
+
+        <div class="contact-us-form">
+            <form>
+                <div class="contact-us-form__field-container">
+                    <!-- In case of error add class "error-field" on this class -->
+                    <div class="contact-us-form__field-contain">
+                        <label class="contact-us-form__input-label" for="yourName">Your Name</label>
+                        <input type="text" class="contact-us-form__input-control" id="yourName" name="yName">
+
+                        <span class="contact-us-form__error-field">Name is missing</span>
+                    </div>
+
+                    <!-- In case of error add class "error-field" on this class -->
+                    <div class="contact-us-form__field-contain">
+
+                        <label class="contact-us-form__input-label" for="email">E-mail</label>
+                        <input type="email" class="contact-us-form__input-control" id="email" name="email">
+
+                        <span class="contact-us-form__error-field">email is missing</span>
+                    </div>
+
+                    <!-- In case of error add class "error-field" on this class -->
+                    <div class="contact-us-form__field-contain">
+                        <label class="contact-us-form__input-label" for="phoneNumber">Phone Number</label>
+                        <input type="number" class="contact-us-form__input-control contact-us-form-number"
+                            id="phoneNumber" name="phoneNumber">
+                        <span class="contact-us-form__error-field">number is missing</span>
+                    </div>
+
+                    <!-- In case of error add class "error-field" on this class -->
+                    <div class="contact-us-form__field-contain">
+                        <label class="contact-us-form__input-label" for="serviceInternest">Service of
+                            Interest</label>
+                        <select class="contact-us-form__input-control" id="serviceInternest">
+                            <option value="face">Face</option>
+                            <option value="breast">Breast</option>
+                        </select>
+                        <span class="contact-us-form__error-field">service is missing</span>
+                    </div>
+
+                    <!-- In case of error add class "error-field" on this class -->
+                    <div class="contact-us-form__field-contain form-addition-information">
+                        <label class="contact-us-form__input-label" for="additionalInformation">Additional
+                            Information</label>
+                        <textarea class="contact-us-form__input-control" cols="20" id="additionalInformation"
+                            name="additionalInformation" rows="5"></textarea>
+                        <span class="contact-us-form__error-field">service is missing</span>
+                    </div>
+                    <div class="contact-us-form__button-contain">
+                        <button class="contact-us-form__button" title="Click on button to submit the form"
+                            aria-label="Click on button to submit the form">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

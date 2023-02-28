@@ -1,0 +1,31 @@
+/*=============  Vendor style   ================================*/
+@import "./vendor/bootstrap";
+@import "./vendor/fontawesome";
+
+
+/*=================  base scss  ================================*/
+@import "./base/var";
+@import "./base/mixin";
+@import "./base/base";
+@import "./base/theme";
+
+
+/*============= Component style ================================*/
+
+@import "./components/banner-image";
+@import "./components/banner-carousel";
+@import "./components/popular-services";
+@import "./components/form-style";
+@import "./components/footer";
+@import "./components/services";
+@import "./components/style1";
+@import "./components/carousel-style";
+@import "./components/find-doctor";
+@import "./components/tab";
+@import "./components/officeList";
+@import "./components/doc-video";
+@import "./components/nicu-locations";
+@import "./components/appointment";
+@import "./components/color-filter";
+@import "./components/menu";
+

@@ -1,0 +1,127 @@
+.footer {
+  margin-top: 42px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &-left,
+    &-right {
+      width: 100%;
+    }
+
+    &-left {
+      background-color: $black;
+      padding: 21px 0 19px;
+
+      &-contain {
+        @extend .small-container;
+
+        &-image {
+          margin: auto;
+          max-width: 174px;
+          width: 100%;
+        }
+
+        &-copyright {
+          margin-top: 12px;
+          text-align: center;
+
+          &-text {
+            color: $white;
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      @include min-screen(sm) {
+        width: 40%;
+      }
+    }
+
+    &-right {
+      background-color: $kingly-cloud;
+      padding: 21px 18px 19px;
+
+      &-contain {
+        @extend .small-container;
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+        margin: 0;
+
+        &-list {
+          list-style: none;
+          text-align: left;
+
+          &-item {
+            &-link {
+              color: $black;
+              font-size: 12px;
+              line-height: 14px;
+              text-decoration: none;
+
+              @include min-screen(md) {
+                font-size: 24px;
+                font-weight: $font-semi-bold;
+                line-height: 29px;
+              }
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            padding-bottom: 18px;
+          }
+
+          @include min-screen(sm) {
+            text-align: center;
+          }
+
+          @include min-screen(sm) {
+            column-count: 2;
+          }
+
+          @include min-screen(md) {
+            max-width: 400px;
+          }
+        }
+
+        @include min-screen(xl) {
+          padding-left: 160px;
+        }
+      }
+
+      @include min-screen(sm) {
+        width: 60%;
+      }
+    }
+  }
+
+  &__inner-container {
+    background-color: $black;
+    border-top: 1px solid $white;
+    padding: 9px 0;
+
+    &-content {
+      @extend .large-container;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-link {
+        color: $white;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: underline;
+      }
+    }
+
+    @include min-screen(md) {
+      padding: 12px 0;
+    }
+  }
+}

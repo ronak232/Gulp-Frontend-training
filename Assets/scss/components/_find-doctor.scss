@@ -1,0 +1,176 @@
+$border-color: orange;
+$color-blue: #0077cd;
+$orange-color: #f05b14;
+
+.stluke-locator {
+  width: 100%;
+
+  &__content {
+    display: flex;
+    max-width: 1320px;
+    padding: 30px 0;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+      justify-content: space-evenly;
+      flex-direction: row;
+      padding: 16px 45px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 660px) {
+      padding: 30px 25px;
+      flex-direction: column;
+    }
+  }
+  &__doctors_location {
+    height: 100%;
+    @media screen and (min-width: 768px) {
+      padding-top: 30px;
+      width: 70%;
+    }
+
+    @media screen and (max-width: 660px) {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
+
+  //   &__stlukes_heading {
+  //     font-size: 50px;
+  //   }
+
+  &__sub_titles {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    color: $color-blue;
+  }
+
+  &__st_logo {
+    padding-right: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+  &__desc {
+    padding: 20px 0;
+
+    @media screen and (min-width: 768px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 660px) {
+      width: 100%;
+    }
+
+    &_first {
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      padding-bottom: 40px;
+      @media screen and (min-width: 768px) {
+        padding-right: 20px;
+        padding-bottom: 30px;
+      }
+    }
+    &_second {
+      font-family: $openSans;
+      font-weight: 400;
+      line-height: 28px;
+      font-size: 16px;
+      padding-right: 40px;
+
+      @media screen and (min-width: 768px) {
+        padding-right: 0;
+      }
+
+      @media screen and (max-width: 660px) {
+        padding-right: 0;
+      }
+    }
+  }
+  &__target_link {
+    text-decoration: none;
+  }
+  &__bird-img {
+    display: inline-block;
+  }
+
+  // Locator css
+  &__find_near_doctor {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 768px) {
+      width: 30%;
+    }
+
+    @media screen and (max-width: 660px) {
+      width: 100%;
+    }
+  }
+
+  &__child_image {
+    width: 100%;
+  }
+
+  &__navigator {
+    @media screen and (min-width: 768px) {
+      padding: 34px 25px;
+    }
+
+    @media screen and (max-width: 660px) {
+      padding: 30px 20px;
+    }
+  }
+
+  &__title_find_doctor {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    color: $color-blue;
+    padding-bottom: 10px;
+  }
+  &__locate_desc {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+  }
+
+  .btn {
+    .steth-icon {
+      padding-right: 10px;
+    }
+
+    &--doc {
+      font-family: $openSans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      margin-left: 0;
+      @media screen and (min-width: 768px) {
+        width: 70%;
+      }
+
+      @media screen and (max-width: 660px) {
+        width: 70%;
+      }
+    }
+
+    &--orange {
+      color: $orange-color;
+      border: 2px solid $orange-color;
+    }
+  }
+}

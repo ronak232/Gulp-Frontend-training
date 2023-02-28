@@ -1,0 +1,131 @@
+/*============= style for rich text box*/
+.rich-text {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        border-bottom: 1px solid $cerrlean-frost;
+        color: $cerrlean-frost;
+        font-family: $bodoni;
+        font-size: 36px;
+        font-weight: $font-normal;
+        line-height: 43px;
+        margin-bottom: 30px;
+        padding-bottom: 7px;
+
+        @include min-screen(lg) {
+            font-size: 48px;
+            line-height: 57px;
+            margin-bottom: 50px;
+        }
+    }
+
+    p {
+        color: $black;
+        font-family: $openSans;
+        font-size: 1.375rem;
+        line-height: 1.2;
+    }
+}
+
+/*Consultent button style*/
+
+.consultent-button {
+    align-items: center;
+    border: 2px solid $bluebarry;
+    display: flex;
+    color: $black;
+    padding: 26px 30px 21px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &-text {
+        font-size: 26px;
+        line-height: 32px;
+        max-width: 223px;
+    }
+
+    i {
+        color: $bluebarry;
+        margin-left: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0px 10px $bluebarry;
+    }
+}
+
+/*===== Submit button =========*/
+
+.submit-button {
+    background-color: $cerrlean-frost;
+    border-radius: 5px;
+    color: $white;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 33px;
+    padding: 24px 17px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $paint-chip;
+    }
+
+    &:focus {
+        border: 2px solid $metallic-seaweed;
+    }
+}
+
+/*====== Container width ===========*/
+.small-container {
+    max-width: 470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+    @include min-screen(sm) {
+        max-width: 540px;
+    }
+
+    @include min-screen(md) {
+        max-width: 720px;
+    }
+
+    @include min-screen(lg) {
+        max-width: 960px;
+    }
+
+    @include min-screen(xl) {
+        max-width: 1038px;
+    }
+}
+
+.large-container {
+    max-width: 470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+    @include min-screen(sm) {
+        max-width: 540px;
+    }
+
+    @include min-screen(md) {
+        max-width: 720px;
+    }
+
+    @include min-screen(lg) {
+        max-width: 960px;
+    }
+
+    @include min-screen(xl) {
+        max-width: 1058px;
+    }
+}

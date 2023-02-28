@@ -1,0 +1,94 @@
+.popular-services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__image-container {
+        display: none;
+
+        @include min-screen(md) {
+            border-right: 1.5px solid $white;
+            display: block;
+            width: 50%;
+        }
+    }
+
+    &__image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 464px;
+        height: 100%;
+        position: relative;
+        width: 100%;
+
+        &::after {
+            background-color: rgba($color: $cerrlean-frost, $alpha: 0.7);
+            content: '';
+            inset: 0;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    &__text-container {
+        background-color: $black;
+        padding: 31px 20px 47px;
+        width: 100%;
+
+        @include min-screen(md) {
+            padding: 29px 40px 40px;
+            width: 50%;
+        }
+    }
+
+    &__text-contain {
+        max-width: 440px;
+        margin: 0 auto;
+        width: 100%;
+
+        &-title {
+            color: $white;
+            font-family: $bodoni;
+            font-weight: $font-bold;
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 21px;
+        }
+
+        &-text {
+            color: $white;
+            font-size: 18px;
+            font-weight: $font-light;
+            line-height: 22px;
+            margin-bottom: 15px;
+        }
+
+        &-list {
+            margin-top: 15px;
+            list-style: none;
+
+            &-item {
+                margin-top: 28px;
+
+                &-link {
+                    color: $electric-violet;
+                    font-family: $bodoni;
+                    font-size: 22px;
+                    font-weight: $font-bold;
+                    line-height: 26px;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }                   
+                }
+            }
+        }
+
+        @include min-screen(md) {
+            max-width: 471px;
+            margin: 0;
+        }
+    }
+}
